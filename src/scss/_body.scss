@@ -86,17 +86,6 @@ body {
       font-family: "Times New roman", serif !important;
     }
 
-    &[data-bvi-builtelements='true']:not(.bvi-no-styles) {
-      .wp-audio-shortcode,
-      iframe,
-      object,
-      video,
-      ymaps,
-      figure {
-        display: block !important;
-      }
-    }
-
     &[data-bvi-builtelements='false']:not(.bvi-no-styles) {
       .wp-audio-shortcode,
       iframe,
@@ -105,6 +94,17 @@ body {
       ymaps,
       figure {
         display: none !important;
+      }
+    }
+
+    &[data-bvi-builtelements='true']:not(.bvi-no-styles) {
+      .wp-audio-shortcode,
+      iframe,
+      object,
+      video,
+      ymaps,
+      figure {
+        display: block !important;
       }
     }
 
